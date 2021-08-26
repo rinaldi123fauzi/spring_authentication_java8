@@ -25,4 +25,9 @@ public class AppController {
         model.addAttribute("listUsers", listUsers);
         return "users";
     }
+
+    @GetMapping("/about")
+    public String viewAbout(Model model){
+        return "about";
+    }
 }
